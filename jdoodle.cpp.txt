@@ -1,0 +1,33 @@
+#include<bits/stdcc++.h>
+
+using namespace std;
+
+typedef long long longlong
+
+
+int main()
+{
+    
+longlong c,d,temporary;
+    
+cin>>c>>d;
+    
+longlong answer=c;
+    
+while(1)
+    {
+        
+temporary=(c*d)/100;
+        
+if(temporary==0)
+        
+break;
+        
+c-=temporary;
+        
+answer+=c;
+    }
+
+   cout<<answer<<'\n';
+
+}
